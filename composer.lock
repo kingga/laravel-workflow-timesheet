@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "91d04f3baa78d3fbf80c78c300cfc33a",
+    "packages": [
+        {
+            "name": "kingga/workflow-timesheet",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kingga/workflow-timesheet.git",
+                "reference": "e6ceecaf9bb770cea1da1e9746df1170fa0427b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kingga/workflow-timesheet/zipball/e6ceecaf9bb770cea1da1e9746df1170fa0427b6",
+                "reference": "e6ceecaf9bb770cea1da1e9746df1170fa0427b6",
+                "shasum": ""
+            },
+            "require-dev": {
+                "brainmaestro/composer-git-hooks": "^2.7",
+                "codeception/codeception": "^3.0",
+                "phan/phan": "^2.2",
+                "symfony/var-dumper": "^4.3"
+            },
+            "type": "library",
+            "extra": {
+                "hooks": {
+                    "pre-push": [
+                        "composer test",
+                        "composer phan"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kingga\\WorkflowTimesheet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Isaac Skelton",
+                    "email": "contact@isaacskelton.com"
+                }
+            ],
+            "description": "Xero workflow weekly CSV parser.",
+            "time": "2019-07-26T06:37:28+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

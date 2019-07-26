@@ -1,0 +1,29 @@
+{
+    "name": "kingga/laravel-workflow-timesheet",
+    "description": "The laravel interface for kingga/workflow, this includes models which will store this information in the database and then add it back into the structures.",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Isaac Skelton",
+            "email": "contact@isaacskelton.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Kingga\\LaravelWorkflowTimesheet\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kingga\\LaravelWorkflowTimesheet\\WorkflowTimesheetServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "kingga/workflow-timesheet": "^1.0"
+    }
+}
