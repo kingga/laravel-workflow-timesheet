@@ -15,7 +15,7 @@ use Illuminate\Auth\Access\HandlesAuthorization;
 /**
  * The base policy.
  */
-class BasePolicy implements Interfaces\INovaPolicy
+abstract class BasePolicy implements Interfaces\INovaPolicy
 {
     use HandlesAuthorization;
 
