@@ -22,6 +22,12 @@ class WorkflowTaskPolicy extends WorkflowJobPolicy
      */
     final protected function sameUser($user, $task): bool
     {
-        return $user->id === $task->job->user_id;
+        $job = $task->job;
+
+        if ($job) {
+            return $user->id === $job->user_id;
+        } else {
+            return $user->id === $task->entries->first()->week->user_id;
+        }
     }
 }

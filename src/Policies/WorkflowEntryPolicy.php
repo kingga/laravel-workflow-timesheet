@@ -22,6 +22,12 @@ class WorkflowEntryPolicy extends WorkflowWeekPolicy
      */
     final protected function sameUser($user, $entry): bool
     {
-        return $user->id === $entry->week->user_id;
+        $week = $entry->week;
+
+        if ($week) {
+            return $user->id === $week->user_id;
+        } else {
+            return $user->id === $entry->task->job->user_id;
+        }
     }
 }
