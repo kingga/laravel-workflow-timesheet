@@ -24,7 +24,7 @@ abstract class BasePolicy implements Interfaces\INovaPolicy
      *
      * @return bool Does belongs to the current user?
      */
-    final protected function sameUser($user, $model): bool
+    protected function sameUser($user, $model): bool
     {
         return $user->id === $model->user_id;
     }
@@ -65,6 +65,14 @@ abstract class BasePolicy implements Interfaces\INovaPolicy
      * {@inheritDoc}
      */
     public function forceDelete($user, $model): bool
+    {
+        return $this->sameUser($user, $model);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function restore($user, $model): bool
     {
         return $this->sameUser($user, $model);
     }
