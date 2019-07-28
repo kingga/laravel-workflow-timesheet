@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "91d04f3baa78d3fbf80c78c300cfc33a",
+    "content-hash": "a24c5f373ae866c5e37dda485d91ee77",
     "packages": [
         {
             "name": "kingga/workflow-timesheet",

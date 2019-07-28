@@ -5,6 +5,13 @@
     "license": "MIT",
     "version": "1.0.0",
     "minimum-stability": "stable",
+    "keywords": [
+        "laravel",
+        "workflow",
+        "timesheet",
+        "kingga",
+        "database"
+    ],
     "authors": [
         {
             "name": "Isaac Skelton",
