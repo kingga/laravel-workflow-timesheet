@@ -25,6 +25,9 @@ class WorkflowWeekPolicy extends BasePolicy
     public function viewAny($user): bool
     {
         // If the user has a week, otherwise they don't need to see it.
-        return WorkflowWeek::where('user_id', $user->id)->exists();
+        // return WorkflowWeek::where('user_id', $user->id)->exists();
+
+        // NOTE: This must be true as the only way the can upload one right now is by using the card.
+        return true;
     }
 }
